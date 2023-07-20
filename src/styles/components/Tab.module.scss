@@ -1,5 +1,7 @@
-%selected {
-  text-decoration: underline;
+@import '../configs/variables';
+
+.active {
+  text-decoration: underline !important;
   text-decoration-color: inherit;
   text-underline-offset: 0.4rem;
 }
@@ -7,12 +9,9 @@
 .container {
   cursor: pointer;
   text-transform: capitalize;
+  color: $primary-color-3;
+  text-decoration: none;
   &:hover {
-    @extend %selected;
+    @extend .active;
   }
-}
-
-.selected_container {
-  @extend .container;
-  @extend %selected;
 }
