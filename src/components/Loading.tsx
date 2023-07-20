@@ -11,8 +11,8 @@ type Props = {
 const Loading: React.FC<Props> = ({ color }) => {
   return (
     <Oval
-      color={colors.primaryColor6}
-      secondaryColor={colors.primaryColor6}
+      color={color ?? colors.primaryColor6}
+      secondaryColor={color ?? colors.primaryColor6}
       wrapperClass={styles.container}
     />
   );
