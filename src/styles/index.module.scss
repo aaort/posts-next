@@ -1,7 +1,2 @@
-@import 'variables.module';
-
-@each $key, $val in $primary-colors {
-  .textColor#{$key} {
-    color: $val;
-  }
-}
+@import 'configs/variables.module';
+@import 'configs/colors.scss';
