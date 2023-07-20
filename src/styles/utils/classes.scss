@@ -1,0 +1,15 @@
+@import '../configs/variables';
+
+.row {
+  display: flex;
+}
+
+.align_items_center {
+  align-items: center;
+}
+
+@each $key, $val in $gaps {
+  .gap_#{$key} {
+    gap: $val;
+  }
+}
