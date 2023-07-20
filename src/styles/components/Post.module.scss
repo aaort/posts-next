@@ -6,7 +6,25 @@
     font-size: 1.5rem;
     margin-top: 0;
   }
+
   span {
     color: $primary-color-3;
   }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.action {
+  padding: 0.5rem 1rem;
+  color: $primary-color-7;
+  background-color: $primary-color-2;
+  border: none;
+  border-radius: $border-radius-md;
+  cursor: pointer;
+  font-weight: 600;
 }

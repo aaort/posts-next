@@ -13,6 +13,10 @@ const Post: React.FC<Props> = ({ post }) => {
         <p className={styles.post_title}>{post.title}</p>
         <span>{post.body}</span>
       </div>
+      <div className={styles.actions}>
+        <button className={styles.action}>Show Comments</button>
+        <button className={styles.action}>Edit</button>
+      </div>
     </Card>
   );
 };
