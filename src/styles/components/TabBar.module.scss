@@ -1,11 +1,12 @@
 @import '../configs/variables';
+@import '../utils/classes';
 
 .container {
   max-width: fit-content;
-  gap: 1rem;
   padding: 1rem;
   border-radius: $border-radius-sm;
   background-color: $primary-color-7;
   color: $primary-color-1;
   display: flex;
+  @extend .gap_6;
 }
