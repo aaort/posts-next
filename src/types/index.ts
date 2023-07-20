@@ -10,4 +10,9 @@ type Post = Common & {
   body: string;
 };
 
-export type { Tab, Post };
+type Album = Common & {
+  userId: number;
+  title: string;
+};
+
+export type { Album, Post, Tab };
