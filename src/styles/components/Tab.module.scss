@@ -1,3 +1,9 @@
 .container {
   cursor: pointer;
+  text-transform: capitalize;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-underline-offset: 0.4rem;
+  }
 }
