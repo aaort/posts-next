@@ -15,7 +15,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <div className="column align_items_center">
+        <div className="column gap_7">
           <TabBar />
           {children}
         </div>
