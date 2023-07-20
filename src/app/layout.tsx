@@ -1,5 +1,6 @@
 import TabBar from '@/components/TabBar';
 import '@/styles/configs/globals.scss';
+import '@/styles/utils/classes.scss';
 
 export default function RootLayout({
   children,
@@ -14,8 +15,10 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <TabBar />
-        {children}
+        <div className="column align_items_center">
+          <TabBar />
+          {children}
+        </div>
       </body>
     </html>
   );
