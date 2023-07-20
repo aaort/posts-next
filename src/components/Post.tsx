@@ -1,10 +1,9 @@
-import { Post } from '@/types';
+import styles from '@/styles/components/Post.module.scss';
+import type { Post as PostType } from '@/types';
 import Card from './Card';
 
-import styles from '@/styles/components/Post.module.scss';
-
 type Props = {
-  post: Post;
+  post: PostType;
 };
 
 const Post: React.FC<Props> = ({ post }) => {
