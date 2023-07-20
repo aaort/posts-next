@@ -15,4 +15,10 @@ type Album = Common & {
   title: string;
 };
 
-export type { Album, Post, Tab };
+type Todo = Common & {
+  userId: number;
+  title: string;
+  completed: boolean;
+};
+
+export type { Album, Post, Tab, Todo };
