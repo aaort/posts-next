@@ -1,4 +1,5 @@
 import styles from '@/styles/components/Tab.module.scss';
+import Link from 'next/link';
 
 type Props = React.PropsWithChildren & {
   isSelected: boolean;
@@ -7,14 +8,13 @@ type Props = React.PropsWithChildren & {
 
 const Tab: React.FC<Props> = ({ children, isSelected, onClick }) => {
   return (
-    <div
+    <Link
+      href={`/${children}`}
       onClick={onClick}
-      className={`${styles.container} ${
-        isSelected ? styles.selected_container : ''
-      }`}
+      className={`${styles.container} ${isSelected ? styles.active : ''}`}
     >
       {children}
-    </div>
+    </Link>
   );
 };
 
