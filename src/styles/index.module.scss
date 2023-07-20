@@ -1,0 +1,7 @@
+@import 'variables.module';
+
+@each $key, $val in $primary-colors {
+  .textColor#{$key} {
+    color: $val;
+  }
+}
