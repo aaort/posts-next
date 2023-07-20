@@ -1,9 +1,18 @@
+%selected {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  text-underline-offset: 0.4rem;
+}
+
 .container {
   cursor: pointer;
   text-transform: capitalize;
   &:hover {
-    text-decoration: underline;
-    text-decoration-color: inherit;
-    text-underline-offset: 0.4rem;
+    @extend %selected;
   }
+}
+
+.selected_container {
+  @extend .container;
+  @extend %selected;
 }

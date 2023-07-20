@@ -8,5 +8,6 @@
   background-color: $primary-color-7;
   color: $primary-color-1;
   display: flex;
+  align-self: center;
   @extend .gap_6;
 }

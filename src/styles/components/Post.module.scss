@@ -1,0 +1,10 @@
+@import '../configs//variables';
+
+.container {
+  .post_title {
+    color: $primary-color-2;
+  }
+  span {
+    color: $primary-color-3;
+  }
+}
