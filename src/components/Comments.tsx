@@ -17,9 +17,9 @@ const Comments: React.FC<Props> = async ({ postId }) => {
   }
 
   return (
-    <div className="column gap_3 bg-color-3 border-radius-1 padding-2">
+    <div className="column gap_3 bg_color_3 border-radius-1 padding_2">
       {comments.map((comment) => (
-        <p className="text-color-7" key={comment.id}>
+        <p className="text_color_7" key={comment.id}>
           {comment.body}
         </p>
       ))}

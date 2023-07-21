@@ -14,22 +14,22 @@
 }
 
 @each $key, $val in $primary-colors {
-  .text-color-#{$key} {
+  .text_color_#{$key} {
     color: $val;
   }
-  .bg-color-#{$key} {
+  .bg_color_#{$key} {
     background-color: $val;
   }
 }
 
 @each $key, $val in $paddings {
-  .padding-#{$key} {
+  .padding_#{$key} {
     padding: $val;
   }
 }
 
 @each $key, $val in $border-radiuses {
-  .border-radius-#{$key} {
+  .border_radius_#{$key} {
     border-radius: $val;
   }
 }

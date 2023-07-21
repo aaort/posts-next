@@ -3,12 +3,12 @@
 
 .container {
   max-width: fit-content;
-  padding: 1rem;
-  border-radius: $border-radius-sm;
-  background-color: $primary-color-7;
+  border-radius: $border_radius_sm;
   color: $primary-color-1;
   display: flex;
   align-self: center;
   margin: 2rem auto;
+  @extend .bg_color_7;
   @extend .gap_6;
+  @extend .padding_5;
 }

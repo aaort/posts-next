@@ -23,15 +23,15 @@ $primary-colors: (
   9: $primary-color-9,
 );
 
-$border-radius-sm: 0.5rem;
-$border-radius-md: 1rem;
-$border-radius-xl: 1.5rem;
+$border_radius_sm: 0.5rem;
+$border_radius_md: 1rem;
+$border_radius_xl: 1.5rem;
 
 $border-radiuses: (
   0: 0,
-  1: $border-radius-sm,
-  2: $border-radius-md,
-  3: $border-radius-xl,
+  1: $border_radius_sm,
+  2: $border_radius_md,
+  3: $border_radius_xl,
 );
 
 $gaps: (
