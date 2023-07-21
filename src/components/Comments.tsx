@@ -1,5 +1,4 @@
 import '@/styles/utils/classes.scss';
-
 import type { Comment } from '@/types';
 
 type Props = {
@@ -18,9 +17,11 @@ const Comments: React.FC<Props> = async ({ postId }) => {
   }
 
   return (
-    <div className="column gap_3">
+    <div className="column gap_3 bg-color-3 border-radius-1 padding-2">
       {comments.map((comment) => (
-        <p key={comment.id}>{comment.body}</p>
+        <p className="text-color-7" key={comment.id}>
+          {comment.body}
+        </p>
       ))}
     </div>
   );
