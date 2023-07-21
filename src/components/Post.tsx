@@ -1,6 +1,7 @@
 import styles from '@/styles/components/Post.module.scss';
 import type { Post as PostType } from '@/types';
 import Card from './Card';
+import ShowComments from './ShowComments';
 
 type Props = {
   post: PostType;
@@ -14,8 +15,7 @@ const Post: React.FC<Props> = ({ post }) => {
         <span>{post.body}</span>
       </div>
       <div className={styles.actions}>
-        <button className={styles.action}>Show Comments</button>
-        <button className={styles.action}>Edit</button>
+        <ShowComments postId={post.id} />
       </div>
     </Card>
   );
