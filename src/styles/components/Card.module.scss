@@ -11,5 +11,22 @@
 
 .container_lighten {
   @extend .container;
-  background-color: lighten($primary-color-7, 20%);
+  transition: all 1000ms;
+  background: linear-gradient(-35deg, $primary-color-7, $primary-color-6);
+  transition: all 400ms ease-out;
+  background-size: 400%;
+  background-position: 0 100%;
+  animation-duration: 2s;
+  animation-name: animateGradient;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes animateGradient {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 100% 0;
+  }
 }
