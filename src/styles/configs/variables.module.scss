@@ -9,9 +9,29 @@ $primary-color-7: #495057;
 $primary-color-8: #343a40;
 $primary-color-9: #212529;
 
+$primary-colors: (
+  0: $primary-color-0,
+  1: $primary-color-1,
+  2: $primary-color-2,
+  3: $primary-color-3,
+  4: $primary-color-4,
+  5: $primary-color-5,
+  6: $primary-color-6,
+  7: $primary-color-7,
+  8: $primary-color-8,
+  9: $primary-color-9,
+);
+
 $border-radius-sm: 0.5rem;
 $border-radius-md: 1rem;
 $border-radius-xl: 1.5rem;
+
+$border-radiuses: (
+  0: 0,
+  1: $border-radius-sm,
+  2: $border-radius-md,
+  3: $border-radius-xl,
+);
 
 $gaps: (
   0: 0,
@@ -22,6 +42,19 @@ $gaps: (
   5: 1.5rem,
   6: 2rem,
   7: 3rem,
+);
+
+$paddings: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.5rem,
+  6: 2rem,
+  7: 2.5rem,
+  8: 3rem,
+  9: 4rem,
 );
 
 :export {
