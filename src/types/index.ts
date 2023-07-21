@@ -21,4 +21,11 @@ type Todo = Common & {
   completed: boolean;
 };
 
-export type { Album, Post, Tab, Todo };
+type Comment = Common & {
+  postId: number;
+  name: string;
+  email: string;
+  body: string;
+};
+
+export type { Album, Comment, Post, Tab, Todo };
