@@ -5,7 +5,9 @@ import type { Todo as TodoType } from '@/types';
 const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 const Page = async () => {
-  const todos: TodoType[] = await (await fetch(`${baseUrl}todos`)).json();
+  const todos: TodoType[] = await (
+    await fetch(`${baseUrl}todos?_limit=10`)
+  ).json();
 
   return (
     <div className="column align_items_center gap_4">

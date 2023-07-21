@@ -5,7 +5,9 @@ import type { Post as PostType } from '@/types';
 const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 const Page = async () => {
-  const posts: PostType[] = await (await fetch(`${baseUrl}posts`)).json();
+  const posts: PostType[] = await (
+    await fetch(`${baseUrl}posts?_limit=10`)
+  ).json();
 
   return (
     <div className="column align_items_center gap_4">
