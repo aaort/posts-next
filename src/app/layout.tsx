@@ -15,10 +15,8 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <div className="column gap_7">
-          <TabBar />
-          {children}
-        </div>
+        <TabBar />
+        {children}
       </body>
     </html>
   );
