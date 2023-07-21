@@ -1,10 +1,11 @@
 @import '../configs/variables.module';
+@import '../utils/classes.scss';
 
 .container {
   width: 100%;
   max-width: 1200px;
   min-height: 200px;
-  background-color: $primary-color-7;
+  @extend .bg_color_7;
   padding: 2rem;
   border-radius: $border_radius_sm;
 }
