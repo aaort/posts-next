@@ -10,12 +10,16 @@ const Page = async () => {
   ).json();
 
   // Uncomment to see how Next.js uses error.tsx component, in case of promise reject
-  // error.tsx components will replace page.tsx component, while loading.tsx component  
+  // error.tsx components will replace page.tsx component, while loading.tsx component
   // will be rendered in the meantime
   // await new Promise((resolve, reject) => {
   //   setTimeout(reject, 2000);
   //   console.log('doing');
   // });
+
+  await new Promise((resolve, reject) => {
+    setTimeout(resolve, 3000);
+  });
 
   return (
     <div className="column align_items_center gap_4">
