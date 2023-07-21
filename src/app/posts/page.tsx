@@ -17,10 +17,6 @@ const Page = async () => {
   //   console.log('doing');
   // });
 
-  await new Promise((resolve, reject) => {
-    setTimeout(resolve, 3000);
-  });
-
   return (
     <div className="column align_items_center gap_4">
       {posts.map((post) => (
