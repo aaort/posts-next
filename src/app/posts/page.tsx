@@ -4,11 +4,11 @@ import type { Post as PostType } from '@/types';
 
 const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
-const Page = async () => {
-  const posts: PostType[] = await (
-    await fetch(`${baseUrl}posts?_limit=10`)
-  ).json();
+const getPosts = async (): Promise<PostType[]> =>
+  await (await fetch(`${baseUrl}posts?_limit=10`)).json();
 
+const Page = async () => {
+  const posts = await getPosts();
   // Uncomment to see how Next.js uses error.tsx component, in case of promise reject
   // error.tsx components will replace page.tsx component, while loading.tsx component
   // will be rendered in the meantime
