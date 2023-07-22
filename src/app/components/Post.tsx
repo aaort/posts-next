@@ -1,13 +1,17 @@
 import styles from '@/styles/components/Post.module.scss';
 import type { Post as PostType } from '@/types';
 import Card from './Card';
-import ShowComments from './ShowComments';
 import Comments from './Comments';
+import ShowComments from './ShowComments';
 
 type Props = {
   post: PostType;
 };
 
+// Post component being a Server Component plays tremendous role
+// in improving load time of posts, since they are rendered on the server
+// excluding interactive parts like "show comments" button which is extracted
+// into it's own Client Component for the same reasons.
 const Post: React.FC<Props> = ({ post }) => {
   return (
     <Card>
