@@ -1,18 +1,13 @@
 'use client';
 
 import styles from '@/styles/components/ShowComments.module.scss';
-import dynamic from 'next/dynamic';
 import { useState } from 'react';
 
-const Comments = dynamic(() => import('@/app/components/Comments'), {
-  loading: () => <p>Loading...</p>,
-});
-
-type Props = {
+type Props = React.PropsWithChildren & {
   postId: number;
 };
 
-const ShowComments: React.FC<Props> = ({ postId }) => {
+const ShowComments: React.FC<Props> = ({ postId, children }) => {
   const [showComments, setShowComments] = useState<boolean>(false);
 
   const toggleComments = () => setShowComments(!showComments);
@@ -21,7 +16,7 @@ const ShowComments: React.FC<Props> = ({ postId }) => {
 
   return (
     <div className={styles.container}>
-      {showComments ? <Comments postId={postId} /> : null}
+      {showComments ? children : null}
       <button onClick={toggleComments} className={styles.button}>
         {buttonTitle}
       </button>
