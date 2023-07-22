@@ -14,17 +14,18 @@ const TabBar: React.FC<{}> = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <ul className={styles.container}>
       {tabs.map((tab) => (
-        <Tab
-          onClick={() => handleTabChange(tab)}
-          isSelected={tab === selectedTab}
-          key={tab}
-        >
-          {tab}
-        </Tab>
+        <li key={tab}>
+          <Tab
+            onClick={() => handleTabChange(tab)}
+            isSelected={tab === selectedTab}
+          >
+            {tab}
+          </Tab>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
