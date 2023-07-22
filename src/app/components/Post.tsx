@@ -16,7 +16,10 @@ const Post: React.FC<Props> = ({ post }) => {
         <span>{post.body}</span>
       </div>
       <div className={styles.actions}>
-        <ShowComments postId={post.id}>
+        <ShowComments>
+          {/* Passing <Comments /> as children to the <ShowComments />
+           will allow as to render it as a server component and fill the slot
+           when the parent component is rendered */}
           <Comments postId={post.id} />
         </ShowComments>
       </div>
