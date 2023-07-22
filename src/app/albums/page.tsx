@@ -1,4 +1,4 @@
-import Album from '@/components/Album';
+import Album from '@/app/components/Album';
 import '@/styles/utils/classes.scss';
 import type { Album as AlbumType } from '@/types';
 

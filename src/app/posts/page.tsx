@@ -1,4 +1,4 @@
-import Post from '@/components/Post';
+import Post from '@/app/components/Post';
 import '@/styles/utils/classes.scss';
 import type { Post as PostType } from '@/types';
 

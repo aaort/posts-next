@@ -1,4 +1,4 @@
-import TabBar from '@/components/TabBar';
+import TabBar from '@/app/components/TabBar';
 import '@/styles/configs/globals.scss';
 import '@/styles/utils/classes.scss';
 

@@ -4,7 +4,7 @@ import styles from '@/styles/components/ShowComments.module.scss';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
 
-const Comments = dynamic(() => import('@/components/Comments'), {
+const Comments = dynamic(() => import('@/app/components/Comments'), {
   loading: () => <p>Loading...</p>,
 });
 
