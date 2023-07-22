@@ -15,6 +15,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
+        {/* TabBar component musth be shared across all three pages */}
         <TabBar />
         {children}
       </body>
