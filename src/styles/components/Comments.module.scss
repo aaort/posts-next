@@ -1,0 +1,6 @@
+@import '../configs/variables.module';
+
+.username {
+  font-style: italic;
+  color: lighten($primary-color-7, 20%);
+}

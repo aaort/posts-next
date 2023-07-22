@@ -1,3 +1,4 @@
+import styles from '@/styles/components/Comments.module.scss';
 import '@/styles/utils/classes.scss';
 import type { Comment } from '@/types';
 
@@ -19,8 +20,8 @@ const Comments: React.FC<Props> = async ({ postId }) => {
   return (
     <div className="column gap_3 bg_color_3 border_radius_1 padding_2">
       {comments.map((comment) => (
-        <p className="text_color_7" key={comment.id}>
-          {comment.name}
+        <p className="textC_color_7" key={comment.id}>
+          <span className={styles.username}>{comment.name}</span>
           <br />
           <br />
           {comment.body}
