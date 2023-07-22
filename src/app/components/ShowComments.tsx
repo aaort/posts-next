@@ -3,11 +3,9 @@
 import styles from '@/styles/components/ShowComments.module.scss';
 import { useState } from 'react';
 
-type Props = React.PropsWithChildren & {
-  postId: number;
-};
+type Props = React.PropsWithChildren & {};
 
-const ShowComments: React.FC<Props> = ({ postId, children }) => {
+const ShowComments: React.FC<Props> = ({ children }) => {
   const [showComments, setShowComments] = useState<boolean>(false);
 
   const toggleComments = () => setShowComments(!showComments);
