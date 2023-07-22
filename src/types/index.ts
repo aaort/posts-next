@@ -1,5 +1,7 @@
 type Tab = 'posts' | 'albums' | 'todos';
 
+type PostLimit = 10 | 20 | 50 | 100;
+
 type Common = {
   id: number;
 };
@@ -28,4 +30,4 @@ type Comment = Common & {
   body: string;
 };
 
-export type { Album, Comment, Post, Tab, Todo };
+export type { Album, Comment, Post, PostLimit, Tab, Todo };
